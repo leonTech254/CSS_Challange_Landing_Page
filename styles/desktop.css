@@ -7,6 +7,14 @@
     list-style: none;
     font-family: 'Times New Roman', Times, serif;
 }
+button
+{
+    cursor: pointer;
+}
+button:active
+{
+    transform: scale(.9);
+}
 
 .logo
 {
@@ -48,8 +56,10 @@ nav
     background-position:center;
     background-size: cover ;
     background-repeat: no-repeat;
+    position: relative;
 
 }
+
 
 
 .banner
@@ -57,9 +67,125 @@ nav
     display: flex;
     flex-direction: column;
     padding: 10px;
+    gap: 2rem;
+    width: 30rem;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rebeccapurple; */
+    text-align: center;
+    margin-top: 60px;
 
 }
 .banner h1
 {
     color: #fff;
+    font-weight: bold;
+    font-size:40px;
 }
+
+.banner p
+{
+    color:#fff;
+    font-size: large;
+    text-align: center;
+}
+/* styling the banner buttons */
+.banner .btn_container button
+{
+    padding: 10px 30px 10px 30px;
+    border-radius:2rem;
+    border: none;
+    color: #fff;
+    background: transparent;
+}
+
+
+
+.btn_container .learn_more_btn
+{
+    border: 1px solid #fff !important;
+}
+.btn_container .quote_btn
+{
+    background-color: blue !important;
+}
+
+
+/* styling the nav cards */
+
+.nav_cards
+{
+position: absolute;
+left: 50%;
+bottom: -5rem;
+transform: translate(-50%,0%);
+}
+
+.nav_cards,.services_card
+{
+display: grid;
+grid-template-columns:repeat(3,1fr);
+gap: 1.5rem;
+/* background-color: red; */
+width: 55vw;
+margin: auto;
+}
+
+
+.nav_cards .card *
+{
+    padding: 0;
+    margin: 0;
+}
+
+.nav_cards .card
+{
+    padding: 20px;
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: repeat(1,1fr);
+    /* width: 15rem; */
+    height: 10rem;
+    /* background-color: red; */
+    background-color: #fff;
+    gap: .2rem;
+    padding-left: 15px;
+    color: #000;
+    box-shadow: 1px 8px 15px #0004;
+
+}
+
+.nav_cards .card:last-child
+{
+    background-color: blue;
+    color: #fff;
+
+}
+.nav_cards .card:last-child .icon
+{
+    color: #fff;
+}
+
+.nav_cards .card .icon
+{
+    color: blue;
+    font-size: 50px;
+}
+
+.card_title
+{
+    font-size: 25px;
+    font-weight: 900;
+}
+
+
+
+/* start of services cards */
+.services_card
+{
+    margin-top: 15rem;
+    background-color: red;
+    
+}
+ 
