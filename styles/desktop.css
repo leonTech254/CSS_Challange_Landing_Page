@@ -300,3 +300,41 @@ line-height: 1.5rem;
  {
     width: 70px;
  }
+
+ /* start of subsribtion to newsletter styling */
+ .subscription_container
+ {
+    padding: 30px;
+    /* background-color: red; */
+    background: linear-gradient(to right,#054688,#cb1689);
+    display: flex;
+    justify-content: space-between;
+    width: 60vw;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: .2rem;
+    margin-bottom: 30vh;
+ }
+
+
+ .form_container
+ {
+    background-color: #fff;
+    display: flex;
+    width: 25rem;
+ }
+ 
+ .subscription_container input
+ {
+    padding: 15px ;
+    border: none;
+    flex: 2;
+ }
+ .form_container button
+ {
+    height: 100%;
+    flex: 1;
+    background-color: blue;
+    border: none;
+
+ }
