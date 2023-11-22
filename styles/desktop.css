@@ -46,7 +46,7 @@ nav
 {
     padding: 10px;
     border:none;
-    background-color: blue;
+    background-color: #23a6f0;
     color: #fff;
     border-radius: 3px;
 
@@ -54,7 +54,7 @@ nav
 
 .nav_section
 {
-    background: linear-gradient(rgba(0, 0, 0, 0.432),rgba(0, 0, 0, 0.507)), url("../images/image_background.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.432),rgba(0, 0, 0, 0.925)), url("../images/image_background.png");
     height: 80vh;
     background-position:center;
     background-size: cover ;
@@ -111,7 +111,7 @@ nav
 }
 .btn_container .quote_btn
 {
-    background-color: blue !important;
+    background-color: #23a6f0 !important;
 }
 
 
@@ -161,7 +161,7 @@ margin: auto;
 
 .nav_cards .card:last-child
 {
-    background-color: blue;
+    background-color: #23a6f0;
     color: #fff;
 
 }
@@ -172,7 +172,7 @@ margin: auto;
 
 .nav_cards .card .icon, .services_card .card .icon
 {
-    color: blue;
+    color: #23a6f0;
     font-size: 50px;
 }
 
@@ -334,7 +334,253 @@ line-height: 1.5rem;
  {
     height: 100%;
     flex: 1;
-    background-color: blue;
+    background-color: #23a6f0;
     border: none;
 
  }
+
+
+ /* start of pricing content */
+ .pricing_container_wrapper
+ {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    gap: 2rem;
+ }
+.pricing_intro
+{
+    text-align: center;
+}
+.pricing_intro p
+{
+    width: 35rem;
+    margin: auto;
+    padding: 20px;
+}
+ .pricing_cards_container
+ {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 58vw;
+    margin: auto ;
+    /* background-color: red;  */
+    margin-top:90px ;
+
+ }
+ .pricing_cards_container .card
+ {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border: 1px solid #23a6f0;
+    text-align: center ;
+    border-radius: 5px;
+    height: fit-content;
+
+ }
+
+ .pricing_cards_container .card .price_label
+ {
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+ }
+ .pricing_cards_container .card .price_description
+ {
+    font-weight: bold;
+ }
+
+ .pricing_number .num
+ {
+    padding: 10px;
+    color: #23a6f0;
+    font-size: 35px;
+    font-weight: bold;
+ }
+ .pricing_number {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "num dollarSign" "num permonth";
+    padding: 0;
+}
+
+.pricing_number .num {
+    grid-area: num;
+    /* background-color: red; */
+    text-align: right ;
+ 
+}
+
+.pricing_number .symbol {
+    grid-area: dollarSign;
+    font-weight: bold;
+    color: #23a6f0;
+    text-align: left !important;
+
+}
+.pricing_number .month {
+    grid-area: permonth;
+    color: #23a6f0;
+    text-align: left !important;
+}
+
+.price_coverning ul
+{
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    font-size: large;
+    gap: 1rem;
+    text-align: left;
+}
+.subscription_button button
+{
+    padding: 10px;
+    width: 88%;
+    border: none;
+    background-color: #23a6f0;
+    border-radius: 10px;
+}
+
+  
+
+/* card in the middle */
+.pricing_cards_container .card:nth-child(2)
+{
+    background-color: #252b42;
+    padding-top: 90px !important;
+
+    /* height: calc(var(fit-content) + 90px); */
+    transform: translatey(-65px);
+    color: #fff;
+    gap: 1.5rem;
+    
+}
+/* branches styles */
+.branchesContainer
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: #252b42;
+    padding: 50px;
+    color: #ffffffd8;
+    position: relative;
+    height: 80vh;
+
+}
+
+.branchesContainer img
+{
+    width: 30rem;
+    object-fit: cover;
+}
+
+.branches_content
+{
+width: 30%;
+}
+
+.branchesContainer .form_container
+{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    bottom: -15rem;
+    display: flex;
+    gap: 1rem;
+    width: 45rem;
+    height: 30rem;
+    border-radius: 4px;
+}
+.form_container img
+{
+    width: 15rem;
+    height: 100%;
+}
+.form_container button
+{
+padding: 12px;
+width: 90%;
+border-radius: .2rem;
+}
+
+
+.form_container form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    color: black;
+    width: 90%;
+    padding-top: 50px;
+}
+.form_container form h1
+{
+    text-align: center;
+    font-size: 25px;
+}
+.form_container .input_group
+{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.form_container label
+{
+    font-weight: bold;
+}
+.form_container label::after
+{
+    content: "*";
+}
+.form_container .input_group input, .form_container .input_group select
+{
+    padding: 10px;
+    width: 100%;
+    background-color: #cccccca2;
+    border: 1px solid #cccccccc;
+    border-radius: 3px;
+    color: rgba(0, 0, 0, 0.452);
+}
+
+.contact_Aurgency
+{
+    position: absolute;
+    bottom: -30rem;
+    width: 100%;
+    margin-bottom: 4rem;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: #000;
+}
+.contact_Aurgency .btn_contact_us
+{
+    padding: 10px 30px;
+    background-color: #23a6f0;
+    border: none;
+    border-radius: .2rem;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}
+
+.footer
+{
+    margin-top: 75vh;
+    background-color: #fff;
+}
+
+
+.footer .footer_section
+{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    
+}
