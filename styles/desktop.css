@@ -154,7 +154,7 @@ margin: auto;
     background-color: #fff;
     gap: .2rem;
     padding-left: 15px;
-    color: #000;
+    color: #1d233b;
     box-shadow: 1px 8px 15px #0004;
 
 }
@@ -314,6 +314,13 @@ line-height: 1.5rem;
     margin-top: 50px;
     border-radius: .2rem;
     margin-bottom: 30vh;
+ }
+
+ .subscription_container p
+ {
+    color: #fff;
+    font-weight: bold;
+    font-size:1.5rem;
  }
 
 
@@ -513,7 +520,7 @@ border-radius: .2rem;
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
-    color: black;
+    color: #1d233b;
     width: 90%;
     padding-top: 50px;
 }
@@ -558,7 +565,7 @@ border-radius: .2rem;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    color: #000;
+    color: #1d233b;
 }
 .contact_Aurgency .btn_contact_us
 {
@@ -570,17 +577,34 @@ border-radius: .2rem;
     font-weight: bold;
     font-size: large;
 }
+.footer_wrapper
+{
+    margin-top: 75vh ;
+    background-color: #fff;
+    padding: 20px;
+}
 
 .footer
 {
-    margin-top: 75vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
     background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
 }
 
 
-.footer .footer_section
+.footer .footer_section h2
 {
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    
+margin-bottom: 2rem;
+color: #1d233b;
+}
+
+.footer_section ul
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: #838383;
 }
