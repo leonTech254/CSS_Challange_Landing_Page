@@ -211,4 +211,92 @@ margin: auto;
     text-align: center;
 
 }
+
+.industry_testmony_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "industry industry industry" "testmony1 testmony2 testmony3";
+    gap: 1rem;
+    place-items: center;
+    width: 70vw;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 15vh;
+    /* background-color: red; */
+
+}
+
+.industry {
+    grid-area: industry;
+    margin-bottom: 3rem;
+}
+
+.testmony1 {
+    grid-area: testmony1;
+}
+
+.testmony2 {
+    grid-area: testmony2;
+}
+
+.testmony3 {
+    grid-area: testmony3;
+}
+
+ .industry_testmony_wrapper .card
+ {
+    border: 1px solid grey;
+    width: 90%;
+    text-align: center;
+    padding:20px ;
+
+    background-color: #fff;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+ }
+
+.industry_testmony_wrapper .industry_preview_content 
+{
+/* background-color: red; */
+font-size: 1.2rem;
+width: 52%;
+margin: auto;
+line-height: 1.5rem;
+}
  
+ 
+ .industry_testmony_wrapper .card:last-child
+ {
+    margin-right: auto;
+ }
+ .industry_testmony_wrapper .card .user_image
+ {
+    width: 100px;
+    border: .5px solid gray;
+    border-radius: 50%;
+ }
+
+
+ /* Other companies logos */
+ .otherCompanies
+ {
+    padding: 20px;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 1.8rem; */
+    margin: auto;
+    /* background-color: red; */
+    
+ }
+ .otherCompanies img
+ {
+    width: 70px;
+ }
