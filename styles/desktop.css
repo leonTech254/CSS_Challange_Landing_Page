@@ -15,7 +15,10 @@ button:active
 {
     transform: scale(.9);
 }
-
+body
+{
+    background-color: #cccccc81;
+}
 .logo
 {
     color: #fff;
@@ -139,7 +142,7 @@ margin: auto;
     margin: 0;
 }
 
-.nav_cards .card
+.nav_cards .card ,.services_card .card
 {
     padding: 20px;
     display: grid;
@@ -167,7 +170,7 @@ margin: auto;
     color: #fff;
 }
 
-.nav_cards .card .icon
+.nav_cards .card .icon, .services_card .card .icon
 {
     color: blue;
     font-size: 50px;
@@ -182,10 +185,30 @@ margin: auto;
 
 
 /* start of services cards */
+
+.service_cards_wrapper
+{
+    background-color: #fff;
+    margin-top: 15rem;
+    padding:20px;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: .5rem;
+
+}
 .services_card
 {
-    margin-top: 15rem;
-    background-color: red;
+    background-color: #fff;
+    width: 60vw;
+    /* background-color: red; */
     
+}
+.services_card .card
+{
+    box-shadow: none;
+    text-align: center;
+
 }
  
