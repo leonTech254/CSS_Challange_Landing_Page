@@ -76,7 +76,7 @@ nav
 
 }
 
-
+/* banner styles  */
 
 .banner
 {
@@ -202,7 +202,7 @@ margin: auto;
     background-color: #fff;
     margin-top: 15rem;
     padding:20px;
-    height: 40vh;
+    min-height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
