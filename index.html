@@ -8,12 +8,14 @@
 
 
     <link rel="stylesheet" href="./styles/desktop.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
 </head>
 <body>
     <div class="nav_section">
         <nav>
             <div class="logo">BRANDNAME</div>
-            <div class="nav_items">
+            <div class="nav_item_wrapper">
+            <div class="nav_items mynavO">
                 <ul>
                     <li>Home</li>
                     <li>Product</li>
@@ -22,11 +24,18 @@
                 </ul>
             </div>
 
-            <div class="nav_items">
+            <div class="nav_items mynavAuth">
                 <ul>
                     <li>Login</li>
                     <li><button class="member_button">Become a Member</button></li>
                 </ul>
+            </div>
+        </div>
+
+            <div class="toogle_btn">
+                <span class="material-symbols-outlined" onclick="toogleMenu()">
+                    menu
+                    </span>
             </div>
         </nav>
 
@@ -422,6 +431,8 @@
 
 <!-- end of footer -->
 
-     
+
+
+<script src="./scripts/script.js"></script>
 </body>
 </html>

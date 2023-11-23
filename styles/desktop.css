@@ -26,6 +26,11 @@ body
     
 }
 
+.toogle_btn
+{
+    display: none;
+}
+
 nav
 {
     display: flex;
@@ -34,7 +39,15 @@ nav
     align-items: center;
     align-items: center;
 }
-
+.nav_item_wrapper
+{
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    align-items: center;
+    /* background-color: red; */
+    flex: .8;
+}
 .nav_items ul
 {
     display: flex;
@@ -113,8 +126,6 @@ nav
 {
     background-color: #23a6f0 !important;
 }
-
-
 /* styling the nav cards */
 
 .nav_cards
@@ -608,3 +619,6 @@ color: #1d233b;
     gap: 1rem;
     color: #838383;
 }
+
+
+

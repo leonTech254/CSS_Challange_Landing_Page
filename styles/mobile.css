@@ -1,0 +1,57 @@
+@media (max-width:768px)
+{
+    .nav_items
+    {
+        z-index: 2;
+    }
+
+    .nav_item_wrapper
+    {
+        width: 100%;
+        background-color: #23a6f0;
+        flex-direction: column;
+        gap: 0;
+        overflow: hidden;
+        top: 3.5rem;
+        position: absolute;
+        height: 0;
+        transition:  height 1s;
+
+    }
+   
+    .nav_items_active
+    {
+        padding: 20px;
+        height: 18rem;
+
+    }
+
+    .nav_items ul
+    {
+        flex-direction: column;
+        gap: 1rem;
+    } 
+    nav
+    {
+        flex-direction: column;
+        position: relative;
+    }
+    nav .logo
+    {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+    }
+    .toogle_btn
+    {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+    .toogle_btn span
+    {
+        color: #fff;
+        font-size: xx-large;
+    }
+}
