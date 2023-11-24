@@ -234,7 +234,8 @@ margin: auto;
     width: 100%;
     height: fit-content;
     border-radius: 4px;
-    /* background-color: red; */
+    padding-bottom: 10px;
+    
 }
 .form_image_container
 {
